@@ -1,4 +1,4 @@
-<service name="DirecaoDefensivaDAO" >
+<service name="ListarPerguntas" >
 	<Description>
 		Please Type your service description here
 	</Description>
@@ -6,5 +6,5 @@
 		<messageReceiver mep="http://www.w3.org/2004/08/wsdl/in-only" class="org.apache.axis2.rpc.receivers.RPCInOnlyMessageReceiver" />
 		<messageReceiver  mep="http://www.w3.org/2004/08/wsdl/in-out"  class="org.apache.axis2.rpc.receivers.RPCMessageReceiver"/>
 	</messageReceivers>
-	<parameter name="ServiceClass" locked="false">br.com.queztio.dao.detran.DirecaoDefensivaDAO</parameter>
+	<parameter name="ServiceClass" locked="false">br.com.queztio.controller.ListarPerguntas</parameter>
 </service>
