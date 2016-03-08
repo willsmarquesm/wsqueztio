@@ -1,0 +1,10 @@
+br/com/queztio/util/HibernateUtil.class
+br/com/queztio/model/detran/MeioAmbiente.class
+br/com/queztio/dao/detran/DirecaoDefensivaDAO.class
+br/com/queztio/model/detran/DirecaoDefensiva.class
+br/com/queztio/model/detran/PrimeirosSocorros.class
+br/com/queztio/model/detran/Legislacao.class
+teste/Teste.class
+br/com/queztio/model/detran/PergutasGeneric.class
+br/com/queztio/dao/detran/GenericDAO.class
+br/com/queztio/model/detran/Mecanica.class

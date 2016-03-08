@@ -1,0 +1,10 @@
+/root/workspace/wsqueztio/src/main/java/br/com/queztio/model/detran/Legislacao.java
+/root/workspace/wsqueztio/src/main/java/br/com/queztio/model/detran/DirecaoDefensiva.java
+/root/workspace/wsqueztio/src/main/java/br/com/queztio/util/HibernateUtil.java
+/root/workspace/wsqueztio/src/main/java/br/com/queztio/model/detran/Mecanica.java
+/root/workspace/wsqueztio/src/main/java/br/com/queztio/dao/detran/DirecaoDefensivaDAO.java
+/root/workspace/wsqueztio/src/main/java/br/com/queztio/dao/detran/GenericDAO.java
+/root/workspace/wsqueztio/src/main/java/br/com/queztio/model/detran/MeioAmbiente.java
+/root/workspace/wsqueztio/src/main/java/br/com/queztio/model/detran/PergutasGeneric.java
+/root/workspace/wsqueztio/src/main/java/br/com/queztio/model/detran/PrimeirosSocorros.java
+/root/workspace/wsqueztio/src/main/java/teste/Teste.java
