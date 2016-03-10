@@ -12,7 +12,6 @@ import br.com.queztio.model.detran.DirecaoDefensiva;
 public class TesteClasseDirecaoDefensiva {
 	
 	@Test
-	@Ignore
 	public void adiciona(){
 		
 		DirecaoDefensiva df = new DirecaoDefensiva();
