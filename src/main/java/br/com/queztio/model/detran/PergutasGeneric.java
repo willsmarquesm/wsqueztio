@@ -30,7 +30,7 @@ public abstract class PergutasGeneric implements Serializable {
 	private String respostaCorreta;
 	@Column(name = "caminho_imagem", nullable=true)
 	private String caminhoImagem;
-
+	
 	public long getId() {
 		return id;
 	}

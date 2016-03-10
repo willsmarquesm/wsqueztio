@@ -1,11 +1,12 @@
 package br.com.queztio.dao.detran;
+
 import java.lang.reflect.ParameterizedType;
 import java.util.List;
-
 
 import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
+import org.hibernate.criterion.Restrictions;
 
 import br.com.queztio.util.HibernateUtil;
 
@@ -49,4 +50,19 @@ public class GenericDAO<Entidade> {
 			sessao.close();
 		}
 	}
+
+	public Entidade buscar(Long codigo) {
+		Session sessao = HibernateUtil.getFabricaDeSessoes().openSession();
+		try {
+			Criteria consulta = sessao.createCriteria(classe);
+			consulta.add(Restrictions.idEq(codigo));
+			Entidade resultado = (Entidade) consulta.uniqueResult();
+			return resultado;
+		} catch (RuntimeException erro) {
+			throw erro;
+		} finally {
+			sessao.close();
+		}
+	}
+
 }
