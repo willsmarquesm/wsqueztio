@@ -2,15 +2,15 @@ package br.com.queztio.dao.detran;
 
 import java.util.List;
 
-public class MeioAmbiente extends GenericDAO<MeioAmbiente>{
+public class MeioAmbienteDAO extends GenericDAO<MeioAmbienteDAO>{
 	@Override
-	public void salvar(MeioAmbiente entidade) {
+	public void salvar(MeioAmbienteDAO entidade) {
 		// TODO Auto-generated method stub
 		super.salvar(entidade);
 	}
 	
 	@Override
-	public List<MeioAmbiente> listar() {
+	public List<MeioAmbienteDAO> listar() {
 		// TODO Auto-generated method stub
 		return super.listar();
 	}

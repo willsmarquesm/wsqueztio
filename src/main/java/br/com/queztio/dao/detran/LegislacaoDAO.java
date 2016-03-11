@@ -8,7 +8,7 @@ public class LegislacaoDAO extends GenericDAO<Legislacao>{
 	
 	@Override
 	public void salvar(Legislacao entidade){
-		
+		super.salvar(entidade);
 	}
 	
 	@Override

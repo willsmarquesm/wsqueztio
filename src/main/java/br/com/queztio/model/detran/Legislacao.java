@@ -7,6 +7,15 @@ import javax.persistence.Table;
 @Table(name = "tb_legislacao")
 public class Legislacao extends PergutasGeneric {
 
+	@Override
+	public String toString() {
+		return "Legislacao [getId()=" + getId() + ", getPergunta()=" + getPergunta() + ", getQuestaA()=" + getQuestaA()
+				+ ", getQuestaoB()=" + getQuestaoB() + ", getQuestaoC()=" + getQuestaoC() + ", getQuestaoD()="
+				+ getQuestaoD() + ", getRespostaCorreta()=" + getRespostaCorreta() + ", getCaminhoImagem()="
+				+ getCaminhoImagem() + ", hashCode()=" + hashCode() + ", toString()=" + super.toString()
+				+ ", getClass()=" + getClass() + "]";
+	}
+
 	/**
 	 * 
 	 */
