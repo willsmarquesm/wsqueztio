@@ -9,15 +9,14 @@ import javax.imageio.ImageIO;
 
 public class ManipuladorImagem {
 
-	private byte[] imagemConvertida;
 
-	public byte[] converter(String localizacaoEnome) throws IOException {
+	public static byte[] converter(String path) throws IOException {
 		
-		File arquivo = new File(localizacaoEnome);
+		File arquivo = new File(path);
 		BufferedImage img = ImageIO.read(arquivo);
 		ByteArrayOutputStream bos = new ByteArrayOutputStream();
 		ImageIO.write(img, "png", bos);
-		imagemConvertida = bos.toByteArray();
+		
 		return bos.toByteArray();
 	}
 }

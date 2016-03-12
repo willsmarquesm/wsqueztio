@@ -1,5 +1,7 @@
 package br.com.queztio.model.detran;
 
+import java.util.Arrays;
+
 public class PerguntasSelecionadas extends PergutasGeneric{
 
 	/**
@@ -19,9 +21,13 @@ public class PerguntasSelecionadas extends PergutasGeneric{
 
 	@Override
 	public String toString() {
-		return "PerguntasSelecionadas [getId()=" + getId() + "]";
+		return  " getId()=" + getId() + ", getPergunta()="
+				+ getPergunta() + ", getQuestaA()=" + getQuestaA() + ", getQuestaoB()=" + getQuestaoB()
+				+ ", getQuestaoC()=" + getQuestaoC() + ", getQuestaoD()=" + getQuestaoD() + ", getRespostaCorreta()="
+				+ getRespostaCorreta() + ", getCaminhoImagem()=" + getCaminhoImagem() + "]";
 	}
+
 	
 	
-	
+
 }

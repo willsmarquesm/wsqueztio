@@ -8,7 +8,6 @@ import br.com.queztio.util.HibernateUtil;
 public class TesteConexao {
 	
 	@Test
-	@Ignore
 	public void testeConexao(){
 		
 		HibernateUtil.getFabricaDeSessoes();

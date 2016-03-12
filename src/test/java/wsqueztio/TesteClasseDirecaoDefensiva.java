@@ -13,52 +13,68 @@ import org.junit.Ignore;
 import org.junit.Test;
 
 import br.com.queztio.dao.detran.DirecaoDefensivaDAO;
+import br.com.queztio.dao.detran.LegislacaoDAO;
+import br.com.queztio.dao.detran.MecanicaDAO;
+import br.com.queztio.dao.detran.MeioAmbienteDAO;
+import br.com.queztio.dao.detran.PrimeirosSocorrosDAO;
 import br.com.queztio.model.detran.DirecaoDefensiva;
+import br.com.queztio.model.detran.Legislacao;
 
 public class TesteClasseDirecaoDefensiva {
-
+	
+	final String path = "C:/Users/VictorH/git/wsqueztio/src/main/resources/img/teste2.png";
+	LegislacaoDAO lDAO = new LegislacaoDAO();
+	MecanicaDAO mDAO = new MecanicaDAO();
+	MeioAmbienteDAO meDAO = new MeioAmbienteDAO();
+	PrimeirosSocorrosDAO pDAO = new PrimeirosSocorrosDAO();
+	DirecaoDefensivaDAO dao = new DirecaoDefensivaDAO();
+	
+	
 	@Test
 	@Ignore
 	public void adiciona() {
 
-		DirecaoDefensiva df = new DirecaoDefensiva();
+		Legislacao df = new Legislacao();
+		
+		
 
-		DirecaoDefensivaDAO dao = new DirecaoDefensivaDAO();
-
-		df.setPergunta("Teste Placa");
+		df.setPergunta("Teste 1");
 		df.setQuestaA("2");
 		df.setQuestaoB("3");
 		df.setQuestaoC("4");
 		df.setQuestaoD("5");
 		df.setRespostaCorreta("1");
-		df.setCaminhoImagem(
-				"/home/wiusmarques/Área\\ de\\ Trabalho/workspace/wsqueztio/src/main/resources/img/teste.png");
+		df.setCaminhoImagem(path);
 
-		dao.salvar(df);
+		lDAO.salvar(df);
 
 	}
 
 	@Test
-	@Ignore
+	//@Ignore
 	public void list() {
 
-		DirecaoDefensivaDAO dao = new DirecaoDefensivaDAO();
-
 		List<DirecaoDefensiva> lista = new ArrayList<DirecaoDefensiva>();
-
+		List<Legislacao> lista1 = new ArrayList<Legislacao>();
+		
 		lista = dao.listar();
-
+		lista1 = lDAO.listar();
+		
 		lista.forEach(d -> System.out.println(d));
-
+		lista1.forEach(f -> System.out.println(f));
+		
 	}
 	
 	@Test
+	@Ignore
 	public void conversao() throws IOException{
+		
+		/*
 		DirecaoDefensivaDAO dao = new DirecaoDefensivaDAO();
 		DirecaoDefensiva df = new DirecaoDefensiva(); 
-		df = dao.buscar(7L);
+		df = dao.buscar(7L);*/
 		
-		File arquivo = new File(df.getCaminhoImagem());
+		File arquivo = new File("C:/Users/VictorH/git/wsqueztio/src/main/resources/img/teste1.png");
 		BufferedImage img = ImageIO.read(arquivo);
 		ByteArrayOutputStream bos = new ByteArrayOutputStream();
 		ImageIO.write(img, "png", bos);
