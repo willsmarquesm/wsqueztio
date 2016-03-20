@@ -9,7 +9,7 @@ public class Legislacao extends PergutasGeneric {
 
 	@Override
 	public String toString() {
-		return "Legislacao [getId()=" + getId() + ", getPergunta()=" + getPergunta() + ", getQuestaA()=" + getQuestaA()
+		return "Legislacao [getId()=" + getId() + ", getPergunta()=" + getPergunta() + ", getQuestaA()=" + getQuestaoA()
 				+ ", getQuestaoB()=" + getQuestaoB() + ", getQuestaoC()=" + getQuestaoC() + ", getQuestaoD()="
 				+ getQuestaoD() + ", getRespostaCorreta()=" + getRespostaCorreta() + ", getCaminhoImagem()="
 				+ getCaminhoImagem() + ", hashCode()=" + hashCode() + ", toString()=" + super.toString()

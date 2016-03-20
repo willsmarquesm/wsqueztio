@@ -19,7 +19,7 @@ public abstract class PergutasGeneric implements Serializable {
 	private long id;
 	private String pergunta;
 	@Column(name = "questao_a")
-	private String questaA;
+	private String questaoA;
 	@Column(name = "questao_b")
 	private String questaoB;
 	@Column(name = "questao_c")
@@ -47,12 +47,12 @@ public abstract class PergutasGeneric implements Serializable {
 		this.pergunta = pergunta;
 	}
 
-	public String getQuestaA() {
-		return questaA;
+	public String getQuestaoA() {
+		return questaoA;
 	}
 
-	public void setQuestaA(String questaA) {
-		this.questaA = questaA;
+	public void setQuestaoA(String questaoA) {
+		this.questaoA = questaoA;
 	}
 
 	public String getQuestaoB() {
@@ -120,7 +120,7 @@ public abstract class PergutasGeneric implements Serializable {
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return "" + getId() + getPergunta() + getQuestaA() + getQuestaoB() + getQuestaoC() + getQuestaoD() + getRespostaCorreta() + getCaminhoImagem();
+		return "" + getId() + getPergunta() + getQuestaoA() + getQuestaoB() + getQuestaoC() + getQuestaoD() + getRespostaCorreta() + getCaminhoImagem();
 	}
 
 }

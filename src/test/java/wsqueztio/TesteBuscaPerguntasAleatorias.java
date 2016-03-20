@@ -46,11 +46,11 @@ public class TesteBuscaPerguntasAleatorias {
 
 			peSelecionadas.setId(legislacao.getId());
 			peSelecionadas.setPergunta(legislacao.getPergunta());
-			peSelecionadas.setQuestaA(legislacao.getQuestaA());
-			peSelecionadas.setQuestaoB(legislacao.getQuestaA());
-			peSelecionadas.setQuestaoC(legislacao.getQuestaA());
-			peSelecionadas.setQuestaoD(legislacao.getQuestaA());
-			peSelecionadas.setRespostaCorreta(legislacao.getQuestaA());
+			peSelecionadas.setQuestaoA(legislacao.getQuestaoA());
+			peSelecionadas.setQuestaoB(legislacao.getQuestaoA());
+			peSelecionadas.setQuestaoC(legislacao.getQuestaoA());
+			peSelecionadas.setQuestaoD(legislacao.getQuestaoA());
+			peSelecionadas.setRespostaCorreta(legislacao.getQuestaoA());
 			peSelecionadas.setCaminhoImagem(legislacao.getCaminhoImagem());
 			peSelecionadas.setImg(new ManipuladorImagem().converter(peSelecionadas.getCaminhoImagem()));
 

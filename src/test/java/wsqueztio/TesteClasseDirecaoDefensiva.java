@@ -39,7 +39,7 @@ public class TesteClasseDirecaoDefensiva {
 		
 
 		df.setPergunta("Teste 1");
-		df.setQuestaA("2");
+		df.setQuestaoA("2");
 		df.setQuestaoB("3");
 		df.setQuestaoC("4");
 		df.setQuestaoD("5");

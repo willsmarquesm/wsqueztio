@@ -22,7 +22,7 @@ public class PerguntasSelecionadas extends PergutasGeneric{
 	@Override
 	public String toString() {
 		return  " getId()=" + getId() + ", getPergunta()="
-				+ getPergunta() + ", getQuestaA()=" + getQuestaA() + ", getQuestaoB()=" + getQuestaoB()
+				+ getPergunta() + ", getQuestaA()=" + getQuestaoA() + ", getQuestaoB()=" + getQuestaoB()
 				+ ", getQuestaoC()=" + getQuestaoC() + ", getQuestaoD()=" + getQuestaoD() + ", getRespostaCorreta()="
 				+ getRespostaCorreta() + ", getCaminhoImagem()=" + getCaminhoImagem() + "]";
 	}
